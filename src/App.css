@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Niramit');
+
+* {
+  font-family: 'Niramit', sans-serif;
+}
+
+.status-message {
+  text-align: center;
+  width: 100%;
+}
+
+.status-message.success {
+  color: green;
+  padding: 10px 0;
+}
+
+.status-message.error {
+  color: red;
+  padding: 10px 0;
+}
+
+.rounded-corners {
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+#weather-forecast .block {
+  height: 100vh;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#weather-forecast .block-filter {
+  width: 20%;
+  background: #3e8ad1;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+}
+
+
+#weather-forecast .block-overview {
+  width: 80%;
+}
+
+#weather-forecast .block-overview .day {
+  display: inline-block;
+  width: calc(20% - 42px);
+  height: 220px;
+  background: rgba(255, 255, 255, .7);
+  padding: 10px;
+  user-select: none; 
+  margin: 10px;
+  font-size: 1.1rem;
+}
+
+#weather-forecast .block-overview .day:hover {
+  background: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+#weather-forecast .block-overview .day .current{
+  margin: 0;
+  line-height: 1.1;
+}
+
+#weather-forecast .block-overview .day-info {
+  background: rgba(255, 255, 255, .9);
+  height: calc(100vh - 350px);
+  padding: 20px;
+  margin: 15px 10px;
+}
